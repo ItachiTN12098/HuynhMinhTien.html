@@ -19,7 +19,7 @@
             padding-bottom: 50px;
         }
 
-        /* Nút quay lại cố định (Floating Back Button) */
+        /* Nút quay lại cố định */
         .btn-back-fixed {
             position: fixed;
             top: 20px;
@@ -43,6 +43,7 @@
             background: #2563eb;
             color: white;
             transform: translateX(5px);
+            text-decoration: none;
         }
 
         /* Profile Header Card */
@@ -51,7 +52,7 @@
             border-radius: 24px;
             padding: 50px 40px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            margin-top: 70px; /* Tăng lề trên để không trùng nút back */
+            margin-top: 70px; 
             margin-bottom: 30px;
             border: 1px solid rgba(255,255,255,0.8);
             text-align: center;
@@ -135,14 +136,12 @@
 </head>
 <body>
 
-<!-- Nút Quay Lại Cố Định -->
-<!-- Bạn có thể thay '#' bằng link trang chủ của bạn hoặc dùng javascript:history.back() -->
-<a href="javascript:history.back()" class="btn-back-fixed">
+<!-- Nút Quay Lại với link yêu cầu -->
+<a href="https://itachitn12098.github.io/tranggt/" class="btn-back-fixed">
     <i class="fas fa-arrow-left"></i> Quay lại
 </a>
 
 <div class="container">
-    <!-- Top Header Card (Centered) -->
     <div class="profile-header">
         <span class="hello-badge">XIN CHÀO TẤT CẢ MỌI NGƯỜI 👋</span>
         <h1 class="display-3 fw-bold mb-2">Mình là <span style="color: #3b82f6;">Minh Tiến</span></h1>
@@ -154,7 +153,6 @@
         </div>
     </div>
 
-    <!-- Bottom Info Cards -->
     <div class="row g-4">
         <!-- Thông tin cá nhân -->
         <div class="col-md-3">
